@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		9817656447FB132D9EC5923F /* Pods_Spank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F525A82B6DCDB6EB5E62530 /* Pods_Spank.framework */; };
-
+		9B4E5ECC1EE355F8001F0FA9 /* MainChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ECB1EE355F8001F0FA9 /* MainChatViewController.swift */; };
+		9B4E5ECE1EE35602001F0FA9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ECD1EE35602001F0FA9 /* MenuViewController.swift */; };
+		9B4E5ED01EE3560A001F0FA9 /* MessagingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ECF1EE3560A001F0FA9 /* MessagingManager.swift */; };
+		9B4E5ED21EE35614001F0FA9 /* ChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ED11EE35614001F0FA9 /* ChannelManager.swift */; };
 		9BDB0E921EE3116700C6BA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB0E911EE3116700C6BA10 /* AppDelegate.swift */; };
 		9BDB0E971EE3116700C6BA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB0E951EE3116700C6BA10 /* Main.storyboard */; };
 		9BDB0E991EE3116700C6BA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB0E981EE3116700C6BA10 /* Assets.xcassets */; };
 		9BDB0E9C1EE3116700C6BA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB0E9A1EE3116700C6BA10 /* LaunchScreen.storyboard */; };
-
 		9BDB0EA41EE31BCC00C6BA10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB0EA31EE31BCC00C6BA10 /* LoginViewController.swift */; };
 		9BDB0EA61EE31E4000C6BA10 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB0EA51EE31E4000C6BA10 /* AddEventViewController.swift */; };
 		9BDB0EA81EE31E5000C6BA10 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB0EA71EE31E5000C6BA10 /* TeamsViewController.swift */; };
@@ -30,14 +31,16 @@
 		0F1C924BA8A71891DE57B63F /* Pods-Spank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spank/Pods-Spank.release.xcconfig"; sourceTree = "<group>"; };
 		4F525A82B6DCDB6EB5E62530 /* Pods_Spank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DFEF77D77CAE63B904DF327 /* Pods-Spank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spank/Pods-Spank.debug.xcconfig"; sourceTree = "<group>"; };
-
+		9B4E5ECB1EE355F8001F0FA9 /* MainChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainChatViewController.swift; sourceTree = "<group>"; };
+		9B4E5ECD1EE35602001F0FA9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9B4E5ECF1EE3560A001F0FA9 /* MessagingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingManager.swift; sourceTree = "<group>"; };
+		9B4E5ED11EE35614001F0FA9 /* ChannelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelManager.swift; sourceTree = "<group>"; };
 		9BDB0E8E1EE3116700C6BA10 /* Spank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDB0E911EE3116700C6BA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BDB0E961EE3116700C6BA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BDB0E981EE3116700C6BA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BDB0E9B1EE3116700C6BA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BDB0E9D1EE3116700C6BA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-
 		9BDB0EA31EE31BCC00C6BA10 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BDB0EA51EE31E4000C6BA10 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		9BDB0EA71EE31E5000C6BA10 /* TeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 		9BDB0EAF1EE323E100C6BA10 /* LocationStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationStore.swift; sourceTree = "<group>"; };
 		9BDB0EB11EE3378700C6BA10 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		9BDB0EB31EE3481400C6BA10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,22 +57,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				9817656447FB132D9EC5923F /* Pods_Spank.framework in Frameworks */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-
 		10C999FDAB0A5ED8ED781D30 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				7DFEF77D77CAE63B904DF327 /* Pods-Spank.debug.xcconfig */,
 				0F1C924BA8A71891DE57B63F /* Pods-Spank.release.xcconfig */,
-
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -82,7 +80,6 @@
 				9BDB0E8F1EE3116700C6BA10 /* Products */,
 				10C999FDAB0A5ED8ED781D30 /* Pods */,
 				E3FEEDBFE0E14D28A44C47F9 /* Frameworks */,
-
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +99,10 @@
 				9BDB0EA51EE31E4000C6BA10 /* AddEventViewController.swift */,
 				9BDB0EB11EE3378700C6BA10 /* LocationSearchTableViewController.swift */,
 				9BDB0EA91EE3226C00C6BA10 /* Event.swift */,
+				9B4E5ECF1EE3560A001F0FA9 /* MessagingManager.swift */,
+				9B4E5ED11EE35614001F0FA9 /* ChannelManager.swift */,
+				9B4E5ECB1EE355F8001F0FA9 /* MainChatViewController.swift */,
+				9B4E5ECD1EE35602001F0FA9 /* MenuViewController.swift */,
 				9BDB0EAD1EE323D300C6BA10 /* EventStore.swift */,
 				9BDB0EAB1EE322FC00C6BA10 /* Location.swift */,
 				9BDB0EAF1EE323E100C6BA10 /* LocationStore.swift */,
@@ -111,17 +112,14 @@
 				9BDB0E9A1EE3116700C6BA10 /* LaunchScreen.storyboard */,
 				9BDB0E9D1EE3116700C6BA10 /* Info.plist */,
 				9BDB0EB31EE3481400C6BA10 /* GoogleService-Info.plist */,
-
 			);
 			path = Spank;
 			sourceTree = "<group>";
 		};
-
 		E3FEEDBFE0E14D28A44C47F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4F525A82B6DCDB6EB5E62530 /* Pods_Spank.framework */,
-
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,14 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BDB0EA01EE3116700C6BA10 /* Build configuration list for PBXNativeTarget "Spank" */;
 			buildPhases = (
-
 				5633E6EFCBF55C6CBDCD5D2E /* [CP] Check Pods Manifest.lock */,
 				9BDB0E8A1EE3116700C6BA10 /* Sources */,
 				9BDB0E8B1EE3116700C6BA10 /* Frameworks */,
 				9BDB0E8C1EE3116700C6BA10 /* Resources */,
 				F191A022C0C8FFBEA2CC510F /* [CP] Embed Pods Frameworks */,
 				C2075351632FB7756841A39C /* [CP] Copy Pods Resources */,
-
 			);
 			buildRules = (
 			);
@@ -201,28 +197,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-
 		5633E6EFCBF55C6CBDCD5D2E /* [CP] Check Pods Manifest.lock */ = {
-
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-
 			name = "[CP] Check Pods Manifest.lock";
-
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C2075351632FB7756841A39C /* [CP] Copy Pods Resources */ = {
-
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,25 +227,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spank/Pods-Spank-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-
 		F191A022C0C8FFBEA2CC510F /* [CP] Embed Pods Frameworks */ = {
-
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-
 			name = "[CP] Embed Pods Frameworks";
-
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spank/Pods-Spank-frameworks.sh\"\n";
-
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -265,17 +249,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				9BDB0EA41EE31BCC00C6BA10 /* LoginViewController.swift in Sources */,
 				9BDB0EA61EE31E4000C6BA10 /* AddEventViewController.swift in Sources */,
+				9B4E5ED21EE35614001F0FA9 /* ChannelManager.swift in Sources */,
 				9BDB0EA81EE31E5000C6BA10 /* TeamsViewController.swift in Sources */,
 				9BDB0EAE1EE323D300C6BA10 /* EventStore.swift in Sources */,
+				9B4E5ECE1EE35602001F0FA9 /* MenuViewController.swift in Sources */,
 				9BDB0EB21EE3378700C6BA10 /* LocationSearchTableViewController.swift in Sources */,
+				9B4E5ED01EE3560A001F0FA9 /* MessagingManager.swift in Sources */,
 				9BDB0EB01EE323E100C6BA10 /* LocationStore.swift in Sources */,
 				9BDB0E921EE3116700C6BA10 /* AppDelegate.swift in Sources */,
 				9BDB0EAC1EE322FC00C6BA10 /* Location.swift in Sources */,
 				9BDB0EAA1EE3226C00C6BA10 /* Event.swift in Sources */,
-
+				9B4E5ECC1EE355F8001F0FA9 /* MainChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,9 +384,7 @@
 		};
 		9BDB0EA11EE3116700C6BA10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-
 			baseConfigurationReference = 7DFEF77D77CAE63B904DF327 /* Pods-Spank.debug.xcconfig */;
-
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G6ZU47QNTF;
@@ -414,9 +398,7 @@
 		};
 		9BDB0EA21EE3116700C6BA10 /* Release */ = {
 			isa = XCBuildConfiguration;
-
 			baseConfigurationReference = 0F1C924BA8A71891DE57B63F /* Pods-Spank.release.xcconfig */;
-
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G6ZU47QNTF;
