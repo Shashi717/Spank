@@ -1,0 +1,11 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/TwilioAccessManager" "${PODS_ROOT}/TwilioChatClient"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SlackTextViewController" "${PODS_ROOT}/Headers/Public/TwilioAccessManager" "${PODS_ROOT}/Headers/Public/TwilioChatClient"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/SlackTextViewController"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SlackTextViewController" -isystem "${PODS_ROOT}/Headers/Public/TwilioAccessManager" -isystem "${PODS_ROOT}/Headers/Public/TwilioChatClient"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SlackTextViewController" -l"c++" -framework "TwilioAccessManager" -framework "TwilioChatClient"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
