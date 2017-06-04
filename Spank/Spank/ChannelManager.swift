@@ -6,6 +6,7 @@
 //  Copyright © 2017 Madushani Lekam Wasam Liyanage. All rights reserved.
 //
 
+/*
 import Foundation
 import UIKit
 import TwilioChatClient
@@ -158,3 +159,4 @@ extension ChannelManager : TwilioChatClientDelegate {
     func chatClient(_ client: TwilioChatClient!, synchronizationStatusChanged status: TCHClientSynchronizationStatus) {
     }
 }
+ */

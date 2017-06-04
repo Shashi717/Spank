@@ -9,6 +9,9 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FirebaseAuth
+import FirebaseDatabase
+import SnapKit
 
 protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)
@@ -30,8 +33,11 @@ class AddEventViewController: UIViewController, CLLocationManagerDelegate, MKMap
     
     let locationManager = CLLocationManager()
     
+    var firebaseRef: FIRDatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Create an Event"
         authorization()
         mapView.showsUserLocation = true
         
@@ -50,7 +56,7 @@ class AddEventViewController: UIViewController, CLLocationManagerDelegate, MKMap
         
         locationSearchTVC.mapView = mapView
         locationSearchTVC.handleMapSearchDelegate = self
-        
+        firebaseRef = FIRDatabase.database().reference()
         zoomIn()
         
     }
@@ -135,6 +141,7 @@ class AddEventViewController: UIViewController, CLLocationManagerDelegate, MKMap
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+        pickedDate = String(describing: datePicker.date)
     }
     
     @IBAction func createTapped(_ sender: UIButton) {
@@ -147,14 +154,25 @@ class AddEventViewController: UIViewController, CLLocationManagerDelegate, MKMap
             let penalty = Double(penaltyAmoutTextField.text!),
             let date = pickedDate,
             let location = pickedLocation {
-            let event = Event(name: name, penalty: penalty, date: date, location: location)
+            // let event = Event(name: name, penalty: penalty, date: date, location: location)
             
+            let dict = ["name":name, "penalty":penalty, "date": date, "location": ["lat": pickedLocation?.lat, "long": pickedLocation?.long]] as [String : Any]
+            firebaseRef?.child("events").childByAutoId().setValue(dict)
+            
+            
+            let alertController = UIAlertController(title: "Successful!", message: "You created an Event", preferredStyle: .alert)
+            
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                self.present(TeamChatroomViewController(), animated: true, completion: nil)
+                
+                // performSegue(withIdentifier: "mainTabSegue", sender: nil)
+            }))
+            self.present(alertController, animated: true, completion: nil)
         }
         
     }
     
-    
-    
+
     /*
      // MARK: - Navigation
      
@@ -165,4 +183,9 @@ class AddEventViewController: UIViewController, CLLocationManagerDelegate, MKMap
      }
      */
     
-}
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    }

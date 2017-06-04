@@ -12,6 +12,11 @@
 		9B4E5ECE1EE35602001F0FA9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ECD1EE35602001F0FA9 /* MenuViewController.swift */; };
 		9B4E5ED01EE3560A001F0FA9 /* MessagingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ECF1EE3560A001F0FA9 /* MessagingManager.swift */; };
 		9B4E5ED21EE35614001F0FA9 /* ChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ED11EE35614001F0FA9 /* ChannelManager.swift */; };
+		9B4E5ED51EE36A60001F0FA9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ED41EE36A60001F0FA9 /* Team.swift */; };
+		9B4E5ED71EE36A73001F0FA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ED61EE36A73001F0FA9 /* User.swift */; };
+		9B4E5ED91EE36B71001F0FA9 /* TeamStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5ED81EE36B71001F0FA9 /* TeamStore.swift */; };
+		9B4E5EDB1EE36B7E001F0FA9 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5EDA1EE36B7E001F0FA9 /* UserStore.swift */; };
+		9B4E5EDE1EE3744B001F0FA9 /* TeamChatroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E5EDD1EE3744B001F0FA9 /* TeamChatroomViewController.swift */; };
 		9BDB0E921EE3116700C6BA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB0E911EE3116700C6BA10 /* AppDelegate.swift */; };
 		9BDB0E971EE3116700C6BA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB0E951EE3116700C6BA10 /* Main.storyboard */; };
 		9BDB0E991EE3116700C6BA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BDB0E981EE3116700C6BA10 /* Assets.xcassets */; };
@@ -35,6 +40,11 @@
 		9B4E5ECD1EE35602001F0FA9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9B4E5ECF1EE3560A001F0FA9 /* MessagingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingManager.swift; sourceTree = "<group>"; };
 		9B4E5ED11EE35614001F0FA9 /* ChannelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelManager.swift; sourceTree = "<group>"; };
+		9B4E5ED41EE36A60001F0FA9 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		9B4E5ED61EE36A73001F0FA9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9B4E5ED81EE36B71001F0FA9 /* TeamStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamStore.swift; sourceTree = "<group>"; };
+		9B4E5EDA1EE36B7E001F0FA9 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		9B4E5EDD1EE3744B001F0FA9 /* TeamChatroomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamChatroomViewController.swift; sourceTree = "<group>"; };
 		9BDB0E8E1EE3116700C6BA10 /* Spank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDB0E911EE3116700C6BA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BDB0E961EE3116700C6BA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +83,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9B4E5ED31EE3570F001F0FA9 /* Tsyrema */ = {
+			isa = PBXGroup;
+			children = (
+				9B4E5ECB1EE355F8001F0FA9 /* MainChatViewController.swift */,
+				9B4E5ECF1EE3560A001F0FA9 /* MessagingManager.swift */,
+				9B4E5ECD1EE35602001F0FA9 /* MenuViewController.swift */,
+				9B4E5ED11EE35614001F0FA9 /* ChannelManager.swift */,
+			);
+			name = Tsyrema;
+			sourceTree = "<group>";
+		};
+		9B4E5EDC1EE36B8F001F0FA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BDB0EA91EE3226C00C6BA10 /* Event.swift */,
+				9B4E5ED41EE36A60001F0FA9 /* Team.swift */,
+				9B4E5ED61EE36A73001F0FA9 /* User.swift */,
+				9BDB0EAB1EE322FC00C6BA10 /* Location.swift */,
+				9BDB0EAD1EE323D300C6BA10 /* EventStore.swift */,
+				9B4E5ED81EE36B71001F0FA9 /* TeamStore.swift */,
+				9B4E5EDA1EE36B7E001F0FA9 /* UserStore.swift */,
+				9BDB0EAF1EE323E100C6BA10 /* LocationStore.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9BDB0E851EE3116700C6BA10 = {
 			isa = PBXGroup;
 			children = (
@@ -96,17 +132,12 @@
 			children = (
 				9BDB0EA31EE31BCC00C6BA10 /* LoginViewController.swift */,
 				9BDB0EA71EE31E5000C6BA10 /* TeamsViewController.swift */,
+				9B4E5EDD1EE3744B001F0FA9 /* TeamChatroomViewController.swift */,
 				9BDB0EA51EE31E4000C6BA10 /* AddEventViewController.swift */,
 				9BDB0EB11EE3378700C6BA10 /* LocationSearchTableViewController.swift */,
-				9BDB0EA91EE3226C00C6BA10 /* Event.swift */,
-				9B4E5ECF1EE3560A001F0FA9 /* MessagingManager.swift */,
-				9B4E5ED11EE35614001F0FA9 /* ChannelManager.swift */,
-				9B4E5ECB1EE355F8001F0FA9 /* MainChatViewController.swift */,
-				9B4E5ECD1EE35602001F0FA9 /* MenuViewController.swift */,
-				9BDB0EAD1EE323D300C6BA10 /* EventStore.swift */,
-				9BDB0EAB1EE322FC00C6BA10 /* Location.swift */,
-				9BDB0EAF1EE323E100C6BA10 /* LocationStore.swift */,
+				9B4E5EDC1EE36B8F001F0FA9 /* Model */,
 				9BDB0E911EE3116700C6BA10 /* AppDelegate.swift */,
+				9B4E5ED31EE3570F001F0FA9 /* Tsyrema */,
 				9BDB0E981EE3116700C6BA10 /* Assets.xcassets */,
 				9BDB0E951EE3116700C6BA10 /* Main.storyboard */,
 				9BDB0E9A1EE3116700C6BA10 /* LaunchScreen.storyboard */,
@@ -251,16 +282,21 @@
 			files = (
 				9BDB0EA41EE31BCC00C6BA10 /* LoginViewController.swift in Sources */,
 				9BDB0EA61EE31E4000C6BA10 /* AddEventViewController.swift in Sources */,
+				9B4E5ED51EE36A60001F0FA9 /* Team.swift in Sources */,
 				9B4E5ED21EE35614001F0FA9 /* ChannelManager.swift in Sources */,
+				9B4E5EDE1EE3744B001F0FA9 /* TeamChatroomViewController.swift in Sources */,
 				9BDB0EA81EE31E5000C6BA10 /* TeamsViewController.swift in Sources */,
 				9BDB0EAE1EE323D300C6BA10 /* EventStore.swift in Sources */,
 				9B4E5ECE1EE35602001F0FA9 /* MenuViewController.swift in Sources */,
 				9BDB0EB21EE3378700C6BA10 /* LocationSearchTableViewController.swift in Sources */,
+				9B4E5ED71EE36A73001F0FA9 /* User.swift in Sources */,
 				9B4E5ED01EE3560A001F0FA9 /* MessagingManager.swift in Sources */,
 				9BDB0EB01EE323E100C6BA10 /* LocationStore.swift in Sources */,
 				9BDB0E921EE3116700C6BA10 /* AppDelegate.swift in Sources */,
 				9BDB0EAC1EE322FC00C6BA10 /* Location.swift in Sources */,
+				9B4E5EDB1EE36B7E001F0FA9 /* UserStore.swift in Sources */,
 				9BDB0EAA1EE3226C00C6BA10 /* Event.swift in Sources */,
+				9B4E5ED91EE36B71001F0FA9 /* TeamStore.swift in Sources */,
 				9B4E5ECC1EE355F8001F0FA9 /* MainChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
