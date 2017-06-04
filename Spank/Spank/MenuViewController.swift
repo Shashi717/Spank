@@ -6,6 +6,7 @@
 //  Copyright © 2017 Madushani Lekam Wasam Liyanage. All rights reserved.
 //
 
+/*
 import Foundation
 import UIKit
 import TwilioChatClient
@@ -209,3 +210,4 @@ extension MenuViewController : TwilioChatClientDelegate {
         tableView.reloadData()
     }
 }
+ */

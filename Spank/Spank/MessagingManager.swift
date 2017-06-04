@@ -6,10 +6,12 @@
 //  Copyright © 2017 Madushani Lekam Wasam Liyanage. All rights reserved.
 //
 
+/*
 import Foundation
 import UIKit
 import TwilioAccessManager
 import TwilioChatClient
+import SlackTextViewController
 
 class MessagingManager: NSObject {
     
@@ -186,3 +188,4 @@ extension MessagingManager : TwilioAccessManagerDelegate {
         print("Access manager error: \(error.localizedDescription)")
     }
 }
+ */

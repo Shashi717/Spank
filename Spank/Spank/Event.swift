@@ -10,21 +10,18 @@ import Foundation
 
 class Event {
     
+    let id: String
     let name: String
     let penalty: Double
     let date: String
     let location: Location
     
-    init(name: String, penalty: Double, date: String, location: Location) {
+    init(id: String, name: String, penalty: Double, date: String, location: Location) {
+        self.id = id
         self.name = name
         self.penalty = penalty
         self.date = date
         self.location = location
     }
-    
-    
-    
-    
-    
     
 }

@@ -7,21 +7,49 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class TeamsViewController: UIViewController {
+class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
 
+    var teams: [Team]?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.title = "Your Teams"
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
     }
     
+    func getTeams() {
+        //let currentUser =
+    }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+  
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard teams != nil else {
+            return 1
+        }
+        return teams!.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath)
+        
+        let selectedItem = teams?[indexPath.row]
+        cell.textLabel?.text = selectedItem?.name
+        
+
+        return cell
+    }
     /*
     // MARK: - Navigation
 
@@ -31,5 +59,7 @@ class TeamsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }

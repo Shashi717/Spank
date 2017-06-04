@@ -12,7 +12,7 @@ import TwilioAccessManager
 import TwilioChatClient
 import SlackTextViewController
 
-
+/*
 class MainChatViewController: SLKTextViewController {
     static let TWCChatCellIdentifier = "ChatTableCell"
     static let TWCChatStatusCellIdentifier = "ChatStatusTableCell"
@@ -269,3 +269,4 @@ extension MainChatViewController : TCHChannelDelegate {
         }
     }
 }
+*/
